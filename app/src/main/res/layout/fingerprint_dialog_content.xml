@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fingerprint_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_fingerprint_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/fingerprint_description"
+        style="?android:attr/textColorSecondary"/>
+
+    <ImageView
+        android:id="@+id/iv_fingerprint_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fp_40px"
+        android:layout_below="@id/tv_fingerprint_title"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_fingerprint_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fingerprint_hint"
+        android:layout_alignBottom="@id/iv_fingerprint_icon"
+        android:layout_alignTop="@id/iv_fingerprint_icon"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/iv_fingerprint_icon"
+        android:gravity="center_vertical"
+        android:textColor="@color/hint_color"/>
+
+</RelativeLayout>
